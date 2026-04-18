@@ -1,13 +1,13 @@
 import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
 import { Stack } from 'expo-router';
+import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
-import 'react-native-reanimated';
 import { useEffect, useState } from 'react';
 import { View } from 'react-native';
-import * as SplashScreen from 'expo-splash-screen';
+import 'react-native-reanimated';
 
-import { useColorScheme } from '@/hooks/use-color-scheme';
 import { CustomSplashScreen } from '@/components/CustomSplashScreen';
+import { useColorScheme } from '@/hooks/use-color-scheme';
 
 export const unstable_settings = {
   anchor: '(tabs)',

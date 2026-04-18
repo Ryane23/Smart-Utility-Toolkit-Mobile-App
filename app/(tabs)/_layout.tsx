@@ -1,9 +1,8 @@
+import { HapticTab } from '@/components/haptic-tab';
+import { useColorScheme } from '@/hooks/use-color-scheme';
+import { MaterialIcons } from '@expo/vector-icons';
 import { Tabs } from 'expo-router';
 import React from 'react';
-import { MaterialIcons } from '@expo/vector-icons';
-import { Colors } from '@/constants/theme';
-import { useColorScheme } from '@/hooks/use-color-scheme';
-import { HapticTab } from '@/components/haptic-tab';
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
@@ -56,6 +55,14 @@ export default function TabLayout() {
           title: 'QR Code',
           headerTitle: 'QR Code Generator',
           tabBarIcon: ({ color }) => <MaterialIcons name="qr-code" size={28} color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="tasks"
+        options={{
+          title: 'Tasks',
+          headerTitle: 'Tasks',
+          tabBarIcon: ({ color }) => <MaterialIcons name="check-box" size={28} color={color} />,
         }}
       />
       <Tabs.Screen

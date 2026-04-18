@@ -1,7 +1,7 @@
-import React from 'react';
-import { View, Text, StyleSheet, ScrollView, Pressable, Image } from 'react-native';
+import { MaterialIcons } from '@expo/vector-icons';
 import { useRouter } from 'expo-router';
-import { MaterialIcons, Ionicons } from '@expo/vector-icons';
+import React from 'react';
+import { Image, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function HomeScreen() {

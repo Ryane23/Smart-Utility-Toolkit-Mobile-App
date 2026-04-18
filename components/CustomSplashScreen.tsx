@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import { StyleSheet, View, Text, ActivityIndicator } from 'react-native';
-import { LinearGradient } from 'expo-linear-gradient';
-import Animated, { FadeIn, FadeOut } from 'react-native-reanimated';
 import { Ionicons } from '@expo/vector-icons';
+import { LinearGradient } from 'expo-linear-gradient';
+import React, { useEffect, useState } from 'react';
+import { ActivityIndicator, StyleSheet, Text, View } from 'react-native';
+import Animated, { FadeIn, FadeOut } from 'react-native-reanimated';
 
 type Props = {
   onFinish?: () => void;

@@ -1,9 +1,9 @@
-import { useState } from 'react';
-import { View, Text, StyleSheet, TextInput, ScrollView, TouchableOpacity, Image, ActivityIndicator } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
 import { MaterialSymbols } from '@/components/ui/icon-symbol';
-import { LinearGradient } from 'expo-linear-gradient';
 import { fetchWeather, WeatherData } from '@/src/services/weather';
+import { LinearGradient } from 'expo-linear-gradient';
+import { useState } from 'react';
+import { ActivityIndicator, Image, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function WeatherScreen() {
   const [city, setCity] = useState('');

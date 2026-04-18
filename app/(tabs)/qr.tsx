@@ -1,8 +1,8 @@
+import { MaterialSymbols } from '@/components/ui/icon-symbol';
 import { useState } from 'react';
-import { View, Text, StyleSheet, TextInput, ScrollView, TouchableOpacity, KeyboardAvoidingView, Platform, Image } from 'react-native';
+import { Image, KeyboardAvoidingView, Platform, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import QRCode from 'react-native-qrcode-svg';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { MaterialSymbols } from '@/components/ui/icon-symbol';
 
 export default function QRScreen() {
   const [text, setText] = useState('https://expo.dev');
